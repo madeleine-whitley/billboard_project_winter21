@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class BillboardsController < ApplicationController
   before_action :set_billboard, only: [:show, :edit, :update, :destroy]
 
   # user
