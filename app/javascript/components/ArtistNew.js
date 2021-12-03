@@ -2,13 +2,13 @@ import React from 'react';
 
 const ArtistNew = ({ billboard, artist }) => {
 
-  const { id, name } = billboard 
-  const { title, body } = artist
-  const defaultTitle = title ? title : ""
-  const defaultBody = body ? body : ""
+  const { id } = billboard 
+  const { name, rank } = artist
+  const defaultTitle = name ? name : ""
+  const defaultBody = rank ? rank : ""
   return (
     <>
-      <h1>New Artist from the Billboard {name}</h1>
+      <h1>New Artist from the Billboard</h1>
       <form action={`/billboards/${id}/artists`} method="post">
         <label>Title</label>
         <input 

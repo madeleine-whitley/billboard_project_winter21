@@ -48,7 +48,7 @@ class ArtistsController < ApplicationController
 
   private 
     def set_billboard
-      @billboard = Billboard.find(params[:id])
+      @billboard = Billboard.find(params[:billboard_id])
     end
 
     def artist_params

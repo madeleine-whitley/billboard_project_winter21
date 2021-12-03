@@ -8,8 +8,8 @@ import React from 'react';
 const Billboards = ({ billboards }) => {
   return (
     <>
-      <h1>Billboards Page</h1>
-      <a href="/billboards/new">Add Artist</a>
+      <h1>Billboards</h1>
+      <a href="/billboards/new">Make a New Billboard</a>
       { billboards.map( (billboard) => (
         <>
           <h3>{billboard.name}</h3>
