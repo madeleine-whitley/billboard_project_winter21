@@ -5,10 +5,10 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <a href="/users">Artists</a>
+          <a href="/artists">Artists</a>
         </li>
         <li>
-          <a href="/courses">Songs</a>
+          <a href="/songs">Songs</a>
         </li>
       </ul>
     </nav>

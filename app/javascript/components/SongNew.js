@@ -9,7 +9,7 @@ const SongNew = ({ artist, song }) => {
   return (
     <>
       <h1>New Song from the Artist {name}</h1>
-      <form action={`/artists/${id}/songs`} method="post">
+      <form action={`/artists/${id}/songs/new`} method="post">
         <label>Title</label>
         <input 
           type="text"
