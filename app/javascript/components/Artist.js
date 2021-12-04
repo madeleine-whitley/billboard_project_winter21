@@ -2,7 +2,7 @@ import React from 'react';
 
 const Artist = ({ billboard, artist }) => {
 
-  const { id } = billboard
+  const { id, artist.name } = billboard
   const { name, rank } = artist
   return (
     <>

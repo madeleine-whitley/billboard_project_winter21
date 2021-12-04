@@ -12,17 +12,17 @@ class SongsController < ApplicationController
   end
 
   def new
-    @song = Song.new
+    @song = artist.songs.new
     render component: 'SongNew', props: {artist: @artist, song: @song}
   end
 
   def edit
-    @song = Song.find(params[:id])
+    @song = artist.songs.find(params[:id])
     render component: 'SongEdit', props: { artist: @artist, song: @song}
   end
 
   def create
-    @song = Song.new(song_params)
+    @song = artist.songs.new(song_params)
     if @song.save
       redirect_to billboards_path
     else
@@ -31,7 +31,7 @@ class SongsController < ApplicationController
 end
 
 def update
-  @song = Song.find(params[:id])
+  @song = artist.songs.find(params[:id])
   if @song.update(song_params)
     redirect_to billboards_path
   else
